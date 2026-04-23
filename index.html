@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Putri Minesweeper Privacy Policy</title>
+    <meta
+      name="description"
+      content="Privacy Policy for Putri Minesweeper by Yusuf Effendi and Satu Bintang Abadi."
+    >
+    <meta name="theme-color" content="#f7b8d7">
+    <meta property="og:title" content="Putri Minesweeper Privacy Policy">
+    <meta
+      property="og:description"
+      content="Privacy Policy for Putri Minesweeper by Yusuf Effendi and Satu Bintang Abadi."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/icon.png">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <style>
+      :root {
+        --bg-top: #fff4fa;
+        --bg-bottom: #f6d7e7;
+        --card: rgba(255, 255, 255, 0.84);
+        --card-border: rgba(178, 61, 118, 0.14);
+        --text: #4f1f41;
+        --muted: #845f79;
+        --primary: #d84f94;
+        --primary-dark: #8c2f73;
+        --gold: #f4c45d;
+        --gold-deep: #c88b17;
+        --shadow: 0 24px 60px rgba(118, 37, 89, 0.14);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(255, 255, 255, 0.9), transparent 32%),
+          linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+        min-height: 100vh;
+      }
+
+      .shell {
+        width: min(1080px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 56px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 28px;
+        align-items: center;
+        padding: 28px;
+        border: 1px solid var(--card-border);
+        border-radius: 32px;
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.82), rgba(255, 243, 249, 0.92));
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(12px);
+      }
+
+      .hero img {
+        width: 100%;
+        border-radius: 30px;
+        display: block;
+        box-shadow: 0 14px 35px rgba(97, 30, 72, 0.2);
+        border: 4px solid rgba(255, 255, 255, 0.75);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(216, 79, 148, 0.1);
+        color: var(--primary-dark);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 18px 0 10px;
+        font-size: clamp(2.1rem, 4vw, 3.8rem);
+        line-height: 0.98;
+        letter-spacing: -0.04em;
+      }
+
+      .lead {
+        max-width: 700px;
+        margin: 0 0 18px;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .chip {
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid rgba(178, 61, 118, 0.12);
+        color: var(--primary-dark);
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 24px;
+        margin-top: 24px;
+      }
+
+      .sidebar,
+      .policy {
+        border: 1px solid var(--card-border);
+        border-radius: 28px;
+        background: var(--card);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(10px);
+      }
+
+      .sidebar {
+        position: sticky;
+        top: 18px;
+        align-self: start;
+        padding: 22px;
+      }
+
+      .sidebar h2,
+      .policy h2 {
+        margin: 0 0 16px;
+        font-size: 1rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--primary-dark);
+      }
+
+      .nav {
+        display: grid;
+        gap: 10px;
+        margin-bottom: 24px;
+      }
+
+      .nav a {
+        padding: 11px 14px;
+        border-radius: 14px;
+        color: var(--text);
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.76);
+        border: 1px solid rgba(178, 61, 118, 0.08);
+        transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+      }
+
+      .nav a:hover {
+        transform: translateY(-1px);
+        border-color: rgba(216, 79, 148, 0.22);
+        background: rgba(255, 244, 249, 0.96);
+      }
+
+      .owner-card {
+        padding: 18px;
+        border-radius: 22px;
+        color: #fff9fc;
+        background: linear-gradient(155deg, var(--primary-dark), #6e1f5a);
+      }
+
+      .owner-card strong {
+        display: block;
+        margin-bottom: 10px;
+        color: var(--gold);
+        font-size: 0.96rem;
+        letter-spacing: 0.03em;
+      }
+
+      .owner-card p {
+        margin: 8px 0;
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      .policy {
+        padding: 30px;
+      }
+
+      .section + .section {
+        margin-top: 30px;
+        padding-top: 28px;
+        border-top: 1px solid rgba(178, 61, 118, 0.1);
+      }
+
+      .section h3 {
+        margin: 0 0 12px;
+        font-size: 1.38rem;
+        color: var(--primary-dark);
+      }
+
+      .section p,
+      .section li {
+        color: var(--text);
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+
+      .section p {
+        margin: 0 0 14px;
+      }
+
+      .section ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .callout {
+        padding: 18px 20px;
+        border-radius: 20px;
+        background: linear-gradient(135deg, rgba(244, 196, 93, 0.18), rgba(216, 79, 148, 0.08));
+        border: 1px solid rgba(200, 139, 23, 0.16);
+      }
+
+      a {
+        color: var(--primary-dark);
+      }
+
+      footer {
+        margin-top: 18px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 860px) {
+        .hero,
+        .content {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          text-align: center;
+        }
+
+        .hero img {
+          width: min(220px, 100%);
+          margin: 0 auto;
+        }
+
+        .hero-meta {
+          justify-content: center;
+        }
+
+        .sidebar {
+          position: static;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .shell {
+          width: min(100% - 20px, 1080px);
+          padding-top: 18px;
+        }
+
+        .hero,
+        .policy,
+        .sidebar {
+          border-radius: 24px;
+        }
+
+        .policy,
+        .hero,
+        .sidebar {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <img src="assets/icon.png" alt="Putri Minesweeper application icon">
+        <div>
+          <div class="eyebrow">Official Privacy Policy</div>
+          <h1>Putri Minesweeper</h1>
+          <p class="lead">
+            This Privacy Policy explains how Putri Minesweeper handles information when you use the app.
+            The app is published and managed by Yusuf Effendi under Satu Bintang Abadi.
+          </p>
+          <div class="hero-meta">
+            <span class="chip">Effective date: April 23, 2026</span>
+            <span class="chip">Package ID: com.satubintang.app</span>
+            <span class="chip">Game category: Offline puzzle</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <aside class="sidebar">
+          <h2>Contents</h2>
+          <nav class="nav">
+            <a href="#overview">Overview</a>
+            <a href="#information">Information We Collect</a>
+            <a href="#usage">How Information Is Used</a>
+            <a href="#sharing">Data Sharing</a>
+            <a href="#children">Children's Privacy</a>
+            <a href="#security">Security</a>
+            <a href="#changes">Policy Changes</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="owner-card">
+            <strong>App Owner</strong>
+            <p>Yusuf Effendi</p>
+            <p>Satu Bintang Abadi</p>
+            <p>01bintangabadi@gmail.com</p>
+          </div>
+        </aside>
+
+        <article class="policy">
+          <section class="section" id="overview">
+            <h3>Overview</h3>
+            <p>
+              Putri Minesweeper is a simple puzzle game designed to be played directly on your device.
+              Based on the current app implementation, the app focuses on local gameplay and settings customization.
+            </p>
+            <div class="callout">
+              <p>
+                Putri Minesweeper does not require account registration and does not ask users to submit personal details
+                in order to play.
+              </p>
+            </div>
+          </section>
+
+          <section class="section" id="information">
+            <h3>Information We Collect</h3>
+            <p>
+              Putri Minesweeper does not intentionally collect personal information such as your full name, phone number,
+              postal address, or payment details through the app itself.
+            </p>
+            <p>
+              The app may store basic gameplay-related preferences on your device, such as local game settings, in order
+              to support the app experience. This information stays on the device unless you choose to remove the app or
+              clear app data.
+            </p>
+          </section>
+
+          <section class="section" id="usage">
+            <h3>How Information Is Used</h3>
+            <p>Any local app data is used only to support core app functionality, such as:</p>
+            <ul>
+              <li>maintaining game configuration such as board size and mine count,</li>
+              <li>supporting gameplay flow and user experience,</li>
+              <li>keeping the app functioning properly on your device.</li>
+            </ul>
+          </section>
+
+          <section class="section" id="sharing">
+            <h3>Data Sharing</h3>
+            <p>
+              Putri Minesweeper does not sell personal information and does not intentionally share personal information
+              with third parties through the app's core gameplay functionality.
+            </p>
+            <p>
+              If future versions add analytics, advertisements, cloud storage, or account systems, this Privacy Policy
+              should be updated before those features are released.
+            </p>
+          </section>
+
+          <section class="section" id="children">
+            <h3>Children's Privacy</h3>
+            <p>
+              Putri Minesweeper is a general audience game. The app is not designed to knowingly collect personal data
+              from children. If you believe a child has provided personal information through a future version of the app,
+              please contact the app owner so appropriate action can be taken.
+            </p>
+          </section>
+
+          <section class="section" id="security">
+            <h3>Security</h3>
+            <p>
+              Reasonable efforts are taken to keep the app implementation straightforward and minimize unnecessary data
+              handling. Because no system can guarantee absolute security, users should also keep their devices updated
+              and protected.
+            </p>
+          </section>
+
+          <section class="section" id="changes">
+            <h3>Changes to This Privacy Policy</h3>
+            <p>
+              This Privacy Policy may be updated from time to time to reflect app changes, legal requirements, or
+              operational updates. The latest published version on this page should be treated as the current version.
+            </p>
+          </section>
+
+          <section class="section" id="contact">
+            <h3>Contact</h3>
+            <p>
+              If you have questions about this Privacy Policy or about Putri Minesweeper, contact:
+            </p>
+            <ul>
+              <li>Owner: Yusuf Effendi</li>
+              <li>Company: Satu Bintang Abadi</li>
+              <li>Email: <a href="mailto:01bintangabadi@gmail.com">01bintangabadi@gmail.com</a></li>
+            </ul>
+          </section>
+        </article>
+      </section>
+
+      <footer>
+        Privacy Policy for Putri Minesweeper • Published by Satu Bintang Abadi
+      </footer>
+    </main>
+  </body>
+</html>
